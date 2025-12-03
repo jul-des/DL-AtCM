@@ -1,16 +1,18 @@
-## Predicting cardiac magnetic resonance imaging markers of atrial cardiopathy from 12 lead ECG using deep learning
+## Diagnosing atrial cardiomyopathy from 12 lead ECG with deep learning
 This github contains the code to the paper: Predicting cardiac magnetic resonance imaging markers of atrial cardiopathy from 12 lead ECG using deep learning. A UK Biobank study. 
 
 Citation:
 ```
-"Predicting cardiac magnetic resonance imaging markers of atrial cardiopathy from 12 lead ECG using deep learning. A UK Biobank study."
-Julian Deseoe, Ezequiel de la Rosa, Martin Haensel, Lisa Herzog, Neda Davoudi, Andreas Luft, Beate Sick, Jan Steffel, Alexander Breitenstein, Gregory Lip, Bjoern Menze, Susanne Wegener."
+"Diagnosing atrial cardiomyopathy from 12 lead ECG with deep learning. A UK Biobank study."
+Julian Deseoe, Ezequiel de la Rosa, Martin Haensel, Lisa Herzog, Neda Davoudi, Andreas Luft, 
+Beate Sick, Jan Steffel, Alexander Breitenstein, Gregory Lip, Bjoern Menze, Susanne Wegener."
 ```
 
 In this paper we finetune a ECG foundational model (ECG-FM) published by McKeen et al. to predict cardiac imaging markers of atrial cardiopathy. We call this model AC_CMR. We then show that the predicted imaging markers allow the prediction of atrial fibrillation, outperforming previous approaches. Details concerning ECG-FM can be found under:
 
 ```
-"McKeen K, Masood S, Toma A, Rubin B, Wang B. ECG-FM: an open electrocardiogram foundation model. Jamia Open. 1. Oktober 2025;8(5):ooaf122."
+"McKeen K, Masood S, Toma A, Rubin B, Wang B. ECG-FM: an open electrocardiogram foundation model. Jamia Open. 
+1. Oktober 2025;8(5):ooaf122."
 ```
 Be sure to also checkout the corresponding github repository under: https://github.com/bowang-lab/ecg-fm
 
@@ -27,6 +29,7 @@ ECG-FM was built in collaboration with fairseq-signals, relevant dependencies ar
 
 ````console
 git clone https://github.com/jul-des/DL-AtCM
+cd DL-AtCM
 conda env create -f environment.yml -n dl_atcm
 conda activate dl_atcm
 ````
