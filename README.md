@@ -42,7 +42,7 @@ Our finetuned models can be downloaded from "XXXXX"
 
 We preprocess and segment the ECGs according to the specifications of McKeen et al. Their pipeline contains resampling to 500 Hz, normalization of ECGs and segmentation into 5 second segments. ECG-FM was built in collaboration with fairseq-signals, where the preprocessing pipeline is implemented. Details can be found under https://github.com/Jwoo5/fairseq-signals/tree/master/scripts/preprocess/ecg. For preprocessing of the CODE15% Dataset a solution is already implemented. For other datasets the example_records.py and example_signals.py scripts will have to be adapted according to the specifications.
 
-The our deep learning models expect shape  (N, 12, 2500) as input i.e. 12-channel, 5 second ECGs resampled to 500 Hz. The leads should be in the order: 'I', 'II', 'III', 'aVR', 'aVL', 'aVF', 'V1', 'V2', 'V3', 'V4', 'V5', 'V6'. For PWI extraction any ECG length can be handled, although results become more reliable the more P waves are present in the ECG signal.
+Our deep learning models expect ECGs of shape  (N, 12, 2500) as input i.e. 12-channel, 5 second ECGs resampled to 500 Hz. The leads should be in the order: 'I', 'II', 'III', 'aVR', 'aVL', 'aVF', 'V1', 'V2', 'V3', 'V4', 'V5', 'V6'. Missing leads can be masked with zeroes. For PWI extraction any ECG length can be handled, although results become more reliable the more P waves are present in the ECG signal.
 
 ## Model Finetuning
 
