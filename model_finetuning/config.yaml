@@ -1,0 +1,23 @@
+# Deep Neural Network Finetuning Hyperparameters Configuration
+# This configuration file contains all the hyperparameters for training a deep neural network
+
+# Training Configuration
+training:
+  learning_rate_regression_head: 0.001
+  learning_rate_backbone: 0.00001
+  batch_size: 32
+  num_epochs_total: 110
+  num_epochs_regression_head: 10
+  patience: 10  # Early stopping patience (epochs without improvement)
+  
+# Regularization
+regularization:
+  dropout_rate: 0.3
+  weight_decay: 0  # L2 regularization
+  
+# Hardware Configuration
+hardware:
+  device: "cuda"  # Options: cuda, cpu, mps (for Apple Silicon)
+  num_workers: 1  # Number of data loader workers
+  pin_memory: true
+  
