@@ -3,9 +3,9 @@ This github contains the code to the paper: Predicting cardiac magnetic resonanc
 
 Citation:
 ```
-"Diagnosing atrial cardiomyopathy from 12 lead ECG with deep learning. A UK Biobank study."
-Julian Deseoe, Ezequiel de la Rosa, Martin Haensel, Lisa Herzog, Neda Davoudi, Andreas Luft, 
-Beate Sick, Jan Steffel, Alexander Breitenstein, Gregory Lip, Bjoern Menze, Susanne Wegener."
+Diagnosing atrial cardiomyopathy from 12 lead ECG with deep learning. A UK Biobank study.
+Julian Deseoe, Ezequiel de la Rosa, Martin Haensel, Lisa Herzog, Andreas Luft, 
+Beate Sick, Jan Steffel, Alexander Breitenstein, Gregory Lip, Bjoern Menze, Susanne Wegener.
 ```
 
 In this paper we finetune a ECG foundational model (ECG-FM) published by McKeen et al. to predict cardiac imaging markers of atrial cardiopathy. We call this model AC_CMR. We then show that the predicted imaging markers allow the prediction of atrial fibrillation, outperforming previous approaches. Details concerning ECG-FM can be found under:
@@ -36,7 +36,7 @@ conda activate dl_atcm
 
 Next, download the ECG-FM pretrained model from the link shown above. We finetuned the mimic_iv_ecg_physionet_pretrained.pt model.
 
-Our finetuned models can be downloaded from "XXXXX"
+Our finetuned models can be downloaded from "https://huggingface.co/jul-des/DL-AtCM"
 
 ## Preprocessing
 
