@@ -76,28 +76,11 @@ def visualize_ecg_saliency(
         sample_idx: int = 0,
         save_path: str | None = None,
         title: str = "ECG Saliency Map",
-        # ---- NEW smoothing parameters --------------------------------------
         smooth: bool = True,
         kernel: str = "gaussian",        # 'gaussian' or 'moving_average'
         kernel_width: int = 51,          # points; should be odd
         gaussian_sigma: float = 7.0,     # only for gaussian
 ):
-    """
-    Visualize an ECG with an optional smoothed saliency map overlay.
-
-    Args
-    ----
-    original_ecg : Tensor (B, 12, 2500)
-    saliency_map : Tensor (B, 12, 2500)
-    lead_names   : list[str] of ECG lead labels
-    sample_idx   : which batch element to show
-    save_path    : optional output file
-    title        : plot title
-    smooth       : whether to smooth saliency values
-    kernel       : 'gaussian' | 'moving_average'
-    kernel_width : window length (odd integer)
-    gaussian_sigma : std‑dev for gaussian kernel (ignored if kernel != 'gaussian')
-    """
 
     if lead_names is None:
         lead_names = ['I', 'II', 'III', 'aVR', 'aVL', 'aVF',
@@ -134,11 +117,8 @@ def visualize_ecg_saliency(
 
     for i in range(12):
         ax = axes[i]
-
-        # ECG trace (light gray so saliency stands out)
         ax.plot(time_axis, ecg_data[i], linewidth=1, color="lightgray", label="ECG")
 
-        # Prepare saliency colouring
         saliency_abs  = np.abs(saliency_smoothed[i])
         saliency_norm = (saliency_abs - saliency_abs.min()) / (np.ptp(saliency_abs) + 1e-8)
 
@@ -154,10 +134,6 @@ def visualize_ecg_saliency(
             ax.set_xlabel('Time (s)')
         ax.set_ylabel('Amp.')
 
-        # Show global colour bar only once
-        #if i == 0:
-            #plt.colorbar(scatter, ax=ax, label='Saliency magnitude')
-
     plt.tight_layout(rect=[0, 0, 1, 0.97])  # make room for suptitle
 
     if save_path:
@@ -167,12 +143,9 @@ def visualize_ecg_saliency(
 
 
 def detect_cardiac_cycles(P_on, P_off, Q, S, T_on, T_off):
-    """
-    Return a list of dicts, each holding the six markers that make up
-    one complete cardiac cycle in the correct temporal order.
-    """
+  
     cycles = []
-    i = 0                       # index into P_on
+    i = 0
 
     while i < len(P_on):
         cycle = {}
