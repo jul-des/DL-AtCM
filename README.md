@@ -36,7 +36,7 @@ conda activate dl_atcm
 
 Next, download the ECG-FM pretrained model from the link shown above. We finetuned the mimic_iv_ecg_physionet_pretrained.pt model.
 
-Our finetuned models can be downloaded from "https://huggingface.co/jul-des/DL-AtCM"
+Our finetuned models will be made available via the UK Biobank, according to UK Biobank regulations. More details will be added in the near future
 
 ## Preprocessing
 
