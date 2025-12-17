@@ -46,7 +46,7 @@ Our deep learning models expect ECGs of shape  (N, 12, 2500) as input i.e. 12-ch
 
 ## Model Finetuning
 
-We have built two different models, both by finetuning ECG-FM. We finetune one model (AC_CMR) to predict cardiac magnetic resonance imaging features of atrial cardiopathy from 12 lead ECG. We finetune a second model (DL_AF) to identify patients with previous diagnosis of atrial fibrillation directly.
+We have built two different models, both by finetuning ECG-FM. We finetune one model (AtCM_CMR) to predict cardiac magnetic resonance imaging features of atrial cardiopathy from 12 lead ECG. We finetune a second model (DL_AF) to identify patients with previous diagnosis of atrial fibrillation directly.
 
 The models and helper functions are defined in ModelClassAtCM_CMR.py and ModelClassDL_AF respectively. The hyperparameters are defined in config.yaml and the finetuning is performed in model_finetuning_AtCM_cmr.py and model_finetuning_dl_af.py respectively. 
 
