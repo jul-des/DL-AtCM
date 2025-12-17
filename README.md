@@ -1,9 +1,9 @@
 ## Diagnosing atrial cardiomyopathy from 12 lead ECG with deep learning
-This github contains the code to the paper: Predicting cardiac magnetic resonance imaging markers of atrial cardiopathy from 12 lead ECG using deep learning. A UK Biobank study. 
+This github contains the code to the paper: Diagnosing atrial cardiomyopathy from 12 lead ECG using deep learning.
 
 Citation:
 ```
-Diagnosing atrial cardiomyopathy from 12 lead ECG with deep learning. A UK Biobank study.
+Diagnosing atrial cardiomyopathy from 12 lead ECG with deep learning.
 Julian Deseoe, Ezequiel de la Rosa, Martin Haensel, Lisa Herzog, Andreas Luft, 
 Beate Sick, Jan Steffel, Alexander Breitenstein, Gregory Lip, Bjoern Menze, Susanne Wegener.
 ```
