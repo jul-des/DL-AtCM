@@ -4,8 +4,8 @@ This github contains the code to the paper: Diagnosing atrial cardiomyopathy fro
 Citation:
 ```
 Diagnosing atrial cardiomyopathy from 12 lead ECG with deep learning.
-Julian Deseoe, Ezequiel de la Rosa, Martin Haensel, Lisa Herzog, Andreas Luft, 
-Beate Sick, Jan Steffel, Alexander Breitenstein, Gregory Lip, Bjoern Menze, Susanne Wegener.
+Julian Deseoe, Ezequiel de la Rosa, Martin Haensel, Lisa Herzog, Andreas R. Luft, 
+Beate Sick, Jan Steffel, Alexander Breitenstein, Gregory Y.H. Lip, Bjoern Menze, Susanne Wegener.
 ```
 
 In this paper we finetune a ECG foundational model (ECG-FM) published by McKeen et al. to predict cardiac imaging markers of atrial cardiopathy. We call this model AC_CMR. We then show that the predicted imaging markers allow the prediction of atrial fibrillation, outperforming previous approaches. Details concerning ECG-FM can be found under:
