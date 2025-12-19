@@ -1,7 +1,7 @@
 ## Diagnosing atrial cardiomyopathy from 12 lead ECG with deep learning
 ![Overview](./Figure.png)
 
-This github contains the code to the paper: Diagnosing atrial cardiomyopathy from 12 lead ECG using deep learning. In this paper we finetune a ECG foundational model (ECG-FM) published by McKeen et al. to predict cardiac imaging markers of atrial cardiomyopathy. We call this model AtCM_CMR. We then show that the predicted imaging markers allow the prediction of atrial fibrillation, outperforming previous approaches. 
+This github contains the code to the paper: **Diagnosing atrial cardiomyopathy from 12 lead ECG using deep learning (under review).** In this paper we finetune a ECG foundational model (ECG-FM) published by McKeen et al. to predict cardiac imaging markers of atrial cardiomyopathy. We call this model AtCM_CMR. We then show that the predicted imaging markers allow the prediction of atrial fibrillation, outperforming previous approaches. 
 
 We compare against two baselines. One baseline is created by extracting P wave indices (PWI) from the ECGs. The PWI can be extracted using the Jupyter Notebook in the folder P wave indices.
 
