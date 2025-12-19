@@ -38,6 +38,12 @@ Next, download the ECG-FM pretrained model from the link shown above. We finetun
 
 Our finetuned models will be made available via the UK Biobank, according to UK Biobank regulations. More details will be added in the near future
 
+## Data
+
+For model finetuning we used data from the UK Biobank. The UK Biobank will make its data available to all researchers for all types of health-related research that is in the public interest. For details on the access preocedure see the UK Biobank website: http://www.ukbiobank.ac.uk/register-apply/.
+
+We evaluate our model on a primary care cohort (CODE-15% dataset). This dataset is publicly available under: https://zenodo.org/records/4916206
+
 ## Preprocessing
 
 We preprocess and segment the ECGs according to the specifications of McKeen et al. Their pipeline contains resampling to 500 Hz, normalization of ECGs and segmentation into 5 second segments. ECG-FM was built in collaboration with fairseq-signals, where the preprocessing pipeline is implemented. Details can be found under https://github.com/Jwoo5/fairseq-signals/tree/master/scripts/preprocess/ecg. For preprocessing of the CODE15% Dataset a solution is already implemented. For other datasets the example_records.py and example_signals.py scripts will have to be adapted according to the specifications.
