@@ -80,7 +80,7 @@ Be sure to also checkout the corresponding github repository under: https://gith
 When using this work please cite: 
 
 ```
-Diagnosing atrial cardiomyopathy from 12 lead ECG with deep learning. (Under review)
+Deep learning enables diagnosis of atrial cardiomyopathy from routine 12-lead electrocardiogram (Under review)
 Julian Deseoe, Ezequiel de la Rosa, Martin Haensel, Lisa Herzog, Andreas R. Luft, 
 Beate Sick, Jan Steffel, Alexander Breitenstein, Gregory Y.H. Lip, Bjoern Menze, Susanne Wegener.
 ```
