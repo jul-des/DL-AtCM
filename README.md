@@ -38,7 +38,7 @@ conda activate dl_atcm
 
 Next, download the ECG-FM pretrained model from https://huggingface.co/wanglab/ecg-fm/tree/main. We finetune the mimic_iv_ecg_physionet_pretrained.pt model. Details on ECG-FM can be found below.
 
-Our finetuned models will be made available via the UK Biobank, according to UK Biobank regulations. More details will be added in the near future
+Our finetuned models will be made available via the UK Biobank, according to UK Biobank regulations. More details will be added in the near future.
 
 ## Data
 
