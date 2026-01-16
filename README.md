@@ -1,7 +1,11 @@
 ## Deep learning enables diagnosis of atrial cardiomyopathy from routine 12-lead electrocardiogram
 ![Overview](./Figure.png)
 
-This github contains the code to the paper: **Deep learning enables diagnosis of atrial cardiomyopathy from routine 12-lead electrocardiogram (under review).** In this paper we finetune a ECG foundational model (ECG-FM) published by McKeen et al. to predict cardiac imaging markers of atrial cardiomyopathy. We call this model AtCM_CMR. We then show that the predicted imaging markers allow the prediction of atrial fibrillation, outperforming previous approaches. 
+This github contains the code to the preprint: 
+```
+Deseoe J, Rosa E de la, Hänsel M, Herzog L, Luft AR, Sick B et al. Deep learning enables diagnosis of atrial cardiomyopathy from routine 12-lead electrocardiogram. medRxiv; 2026  S. 2026.01.12.26343962. available under: https://www.medrxiv.org/content/10.64898/2026.01.12.26343962v1
+```
+ In this paper we finetune a ECG foundational model (ECG-FM) published by McKeen et al. to predict cardiac imaging markers of atrial cardiomyopathy. We call this model AtCM_CMR. We then show that the predicted imaging markers allow the prediction of atrial fibrillation, outperforming previous approaches. 
 
 We compare against two baselines. One baseline is created by extracting P wave indices (PWI) from the ECGs. The PWI can be extracted using the Jupyter Notebook in the folder P wave indices.
 
@@ -80,14 +84,12 @@ Be sure to also checkout the corresponding github repository under: https://gith
 When using this work please cite: 
 
 ```
-Deep learning enables diagnosis of atrial cardiomyopathy from routine 12-lead electrocardiogram (Under review)
-Julian Deseoe, Ezequiel de la Rosa, Martin Haensel, Lisa Herzog, Andreas R. Luft, 
-Beate Sick, Jan Steffel, Alexander Breitenstein, Gregory Y.H. Lip, Bjoern Menze, Susanne Wegener.
+Deseoe J, Rosa E de la, Hänsel M, Herzog L, Luft AR, Sick B et al. Deep learning enables diagnosis of atrial cardiomyopathy from routine 12-lead electrocardiogram. medRxiv; 2026  S. 2026.01.12.26343962. available under: https://www.medrxiv.org/content/10.64898/2026.01.12.26343962v1
 ```
 Please also cite:
 ```
 McKeen K, Masood S, Toma A, Rubin B, Wang B. ECG-FM: an open electrocardiogram foundation model. Jamia Open. 
-1. Oktober 2025;8(5):ooaf122.
+1. October 2025;8(5):ooaf122.
 ```
 as our work builds on their ECG-FM model.
 
