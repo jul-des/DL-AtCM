@@ -38,7 +38,7 @@ conda activate dl_atcm
 
 Next, download the ECG-FM pretrained model from https://huggingface.co/wanglab/ecg-fm/tree/main. We finetune the mimic_iv_ecg_physionet_pretrained.pt model. Details on ECG-FM can be found below.
 
-Our finetuned model weights can be downloaded from hugging face: https://huggingface.co/jul-des/DL-AtCM/
+Our finetuned models will be made available via the UK Biobank, according to UK Biobank regulations. More details will be added in the near future
 
 ## Data
 
@@ -62,14 +62,14 @@ To run the scripts for training, the paths at the top of the files have to be de
 
 ## Inference
 
-In the directory model_evaluation, the provided Jupyter Notebooks can be run to get model predictions, after downloading our finetuned model weigths from huggingface.
+In the directory Model Evaluation, the provided Jupyter Notebooks can be run to get model predictions.
 
 ## Getting P wave indices
 
 The Jupyter Notebook in the directory P wave indiced can be run to get P wave indices (P wave durtation, PQ intervall, P Axis and P amplitude in lead II) of ECGs. We ran the code on the preprocessed but not segmented 12 lead ECGs, returned by the described preprocessing pipeline.
 
 ## Saliency analysis 
-The Jupyter Notebook in the directory saliency can be run to get saliency maps for 12 lead ECGs
+The Jupyter Notebook in the directory Saliency can be run to get saliency maps for 12 lead ECGs
 
 ## About ECG-FM
 ECG-FM was pretrained using self-supervised learning on over 1 million ECG samples and can be finetuned for a wide array of finetuDetails concerning ECG-FM can be found under:
