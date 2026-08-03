@@ -38,7 +38,7 @@ conda activate dl_atcm
 
 Next, download the ECG-FM pretrained model from https://huggingface.co/wanglab/ecg-fm/tree/main. We finetune the mimic_iv_ecg_physionet_pretrained.pt model. Details on ECG-FM can be found below.
 
-The UK Biobank has its own regulations on sharing model weights of deep learning models trained on UK Biobank data. Ultimately, we are planning on opensourcing our model weights and have requested permission to do this from the UK Biobank. For the time being, we are only allowed to share model weights with collaborators for research purposes. If you are interested in using our models for research purposed contact julian.deseoe@uzh.ch directly to discuss potential collaborations.
+The UK Biobank has its own regulations on sharing model weights of deep learning models trained on UK Biobank data. Ultimately, we are planning on open-sourcing our model weights and have requested permission to do this from the UK Biobank. For the time being, we are only allowed to share model weights with collaborators for research purposes. If you are interested in using our models for research purposes contact julian.deseoe@uzh.ch directly to discuss collaborations.
 
 ## Data
 
