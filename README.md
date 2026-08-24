@@ -17,6 +17,7 @@ The second baseline is created by finetuning ECG-FM to identify patients with pr
 - [Preprocessing](#preprocessing)
 - [Model finetuning](#model-finetuning)
 - [Inference](#inference)
+- [Benchmarking on MIMIC-IV Dataset](#benchmarking-on-mimic-iv-dataset)
 - [Getting P wave indices](#getting-p-wave-indices)
 - [Saliency_analysis](#saliency_analysis)
 - [About ECG-FM](#about-ecg-fm)
@@ -63,6 +64,9 @@ To run the scripts for training, the paths at the top of the files have to be de
 ## Inference
 
 In the directory Model Evaluation, the provided Jupyter Notebooks can be run to get model predictions.
+
+## Benchmarking on MIMIC-IV dataset
+As described in the manuscript we perform benchmarking for 5-year incident AF prediction on a subset of the MIMIC-IV dataset not used for ECG-FM pretraining using our model containing age, sex and predicted imaging indices. To encourage comparison with future models we publish our models predictions for 5-year AF in this github repository under the folder results.
 
 ## Getting P wave indices
 
